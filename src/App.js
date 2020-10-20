@@ -3,6 +3,26 @@ import logo from './logo.svg';
 import './App.css';
 import { GreetFun } from "./components/GreetFun"   //curly brace for named export export const Greet... {Greet} should be same here
 import GreetClass from "./components/GreetClass"
+import GreetJSX from './components/GreetJSX'
+import GreetProps from './components/GreetFunProps'
+import GreetClassProp from './components/GreetClassProps'
+import StateClass from './components/StateClass'
+import ClassStateCounter from './components/ClassStateCounter'
+import ClassStateCounterFive from './components/ClassStateCounterFive'
+import DestructureInFun from './components/DestructPropsState_Fun'
+import DestructureInClass from './components/DestructPropsState_Class'
+import EventHandlingFun from './components/EventHandlingFun'
+import EventHandlingClass from './components/EventHandlingClass'
+import BindEvent1 from './components/BindEvent1'
+import BindEvent2 from './components/BindEvent2'
+import BindEvent3 from './components/BindEvent3'
+import BindEvent4 from './components/BindEvent4'
+import Parent from './components/ParentComponent'
+import Condition1 from './components/ConditionalRender1'
+import List1 from './components/RenderList1'
+import List2 from './components/RenderList2_1'
+import List3 from './components/RenderList3'
+import ListIndexKey from './components/RenderListIndexKey'
 
 function App() {
   return (
@@ -10,10 +30,49 @@ function App() {
       <header className="App-header">
         <GreetFun />
         <GreetClass />
+        <GreetJSX />
+
+        <GreetProps name="Kiran" hasChildrn="Yes">
+          <p>This is only for Kiran(Children)</p>
+        </GreetProps>
+
+        <GreetProps name="Appiee" hasChildrn="Yes" >
+          <input type="button" value="click" />
+        </GreetProps>
+
+        <GreetProps name="Julie" hasChildrn="No" />
+
+        <GreetClassProp name="Am Greet" >
+          <p>Iam classProp Child</p>
+        </GreetClassProp>
+        <StateClass />
+        <ClassStateCounter />
+        <ClassStateCounterFive />
+        <DestructureInFun name="Julie" hasChildrn="No" />
+        <DestructureInClass name="Julie" hasChildrn="No" />
+
+        <EventHandlingFun />
+        <EventHandlingClass />
+        <BindEvent1 />
+        <BindEvent2 />
+        <BindEvent3 />
+        <BindEvent4 />
+
+
+        <Parent />
+
+        <Condition1 />
+
+        <List1 />
+        <List2 />
+        <List3 />
+        <ListIndexKey />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+
+
         <a
           className="App-link"
           href="https://reactjs.org"
