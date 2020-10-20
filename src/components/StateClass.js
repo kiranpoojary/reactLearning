@@ -9,7 +9,7 @@ class StateClass extends Component {
     }
 
     subscribedSuccess() {
-        if (this.state.message == "NOT Subscribed") {
+        if (this.state.message === "NOT Subscribed") {
             this.setState({
                 message: "Thaks For Subscribing"
             })

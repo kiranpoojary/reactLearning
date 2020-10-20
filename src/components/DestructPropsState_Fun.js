@@ -1,10 +1,9 @@
-import { render } from '@testing-library/react'
 import React from 'react'
 
 // const DestructPropsState_Fun = ({ name, hasChildrn }) => {
 //     return (
 //         <div><h1> "DestructProps" Name : {name} - Has Children :{hasChildrn}</h1></div>
-//     )
+//     )    
 // }
 
 
