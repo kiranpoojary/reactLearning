@@ -14,6 +14,6 @@ import React from 'react'
 
 
 //same greet using arrow function with named export
-export const GreetFun=()=> <div><h1>Hello KIRAN This is Functional Componenet</h1></div>
+export const GreetFun = () => <div><h1>Hello KIRAN This is Functional Componenet</h1></div>
 
 
