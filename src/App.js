@@ -23,15 +23,22 @@ import List1 from './components/RenderList1'
 import List2 from './components/RenderList2_1'
 import List3 from './components/RenderList3'
 import ListIndexKey from './components/RenderListIndexKey'
+import SimpleStyle from './styledcomponents/SimpleStyle'
+import ConditionalStyle from './styledcomponents/ConditionalStyle'
+import Inline from './styledcomponents/InlineStyle'
+import './styledcomponents/CustomStylesheet.css'
+import Styles from './styledcomponents/module.style.css'
+import StyledCompo from './styledcomponents/ComponentImportStyle'
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+
         <GreetFun />
         <GreetClass />
         <GreetJSX />
-
         <GreetProps name="Kiran" hasChildrn="Yes">
           <p>This is only for Kiran(Children)</p>
         </GreetProps>
@@ -67,6 +74,8 @@ function App() {
         <List2 />
         <List3 />
         <ListIndexKey />
+
+
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -81,6 +90,18 @@ function App() {
         >
           Learn React
         </a>
+
+        ****** Styles *******
+        <SimpleStyle />
+        <ConditionalStyle primary={true} />
+        <Inline />
+
+        <h2 className='error'>Errors</h2>
+        <h2 className="success">Success</h2>
+        <StyledCompo />
+
+
+
       </header>
 
     </div>
