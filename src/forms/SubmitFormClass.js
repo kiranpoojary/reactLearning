@@ -6,7 +6,7 @@ class SubmitFormClass extends Component {
 
         this.state = {
             name: '',
-            course: '',
+            course: 'B.tech',
             feedback: ''
         }
     }
@@ -31,7 +31,8 @@ class SubmitFormClass extends Component {
     }
 
     submitHandler = () => {
-        alert("hi")
+
+        alert(`${this.state.name} ${this.state.course} ${this.state.feedback}`)
     }
 
     render() {
