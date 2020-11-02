@@ -15,7 +15,7 @@ function HookTimer() {
     return (
         <div>
             Hook Timer- {timer}
-            <button onClick={clearInterval(intervalRef.current)}>STOP</button>
+            <button onClick={() => clearInterval(intervalRef.current)}>STOP</button>
         </div>
     )
 }
